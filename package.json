@@ -1,0 +1,45 @@
+{
+  "name": "playwright-ac",
+  "version": "1.0.0",
+  "description": "Playwright project over the Atenea Conocimientos official page",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GastonPaz26/Playwright-AC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GastonPaz26/Playwright-AC/issues"
+  },
+  "homepage": "https://github.com/GastonPaz26/Playwright-AC#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.3",
+    "typescript-eslint": "^8.59.2"
+  },
+  "dependencies": {
+    "typescript": "^6.0.3"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ci": "playwright test --reporter=line",
+    "report:open": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier \"**/*.{ts,js,json,md}\" --write",
+    "format:check": "npm run format -- --check",
+    "prepare": "husky"
+  }
+}
