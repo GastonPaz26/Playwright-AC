@@ -11,7 +11,7 @@ export class PaginaHome {
   }
 
   async navegarARegistro() {
-     this.botonCrearCuenta.click();
+    await this.botonCrearCuenta.click();
   }
 
   async navegarAHome() {
